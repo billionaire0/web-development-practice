@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: #b1ca00b0;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: #7eabb8;
+            border: 3px solid rgb(110, 85, 199);
+            /* padding-top: 29px;
+            padding-bottom: 19px;
+            padding-left: 59px;
+            padding-right: 9px; */
+            /* padding: 9px; */
+
+            /* we can set margin and padding for top, bottom, left, right like this  */
+            /* padding:top bottom left right; */
+            /* padding:29px 19px 59px 9px; */
+
+            /* padding:y(top,bottom) x(left right) */
+            padding: 30px 50px;
+            margin: 34px 50px;
+            border-radius: 30px;
+            width: 600px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt perferendis iusto explicabo enim quos sit eos ducimus sequi est? ipsum dolor sit amet consectetur adipisicing elit. Dolores autem sit molestias, consequuntur facere ex cum. Iure, neque! Quos facilis totam omnis sit.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt perferendis iusto explicabo enim quos sit eos ducimus sequi est? ipsum dolor sit amet consectetur adipisicing elit. Dolores autem sit molestias, consequuntur facere ex cum. Iure, neque! Quos facilis totam omnis sit.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt perferendis iusto explicabo enim quos sit eos ducimus sequi est? ipsum dolor sit amet consectetur adipisicing elit. Dolores autem sit molestias, consequuntur facere ex cum. Iure, neque! Quos facilis totam omnis sit.</p>
+    </div>
+
+</body>
+</html>
