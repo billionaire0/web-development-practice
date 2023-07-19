@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div >p means p should be direct child of div */
+        /* div p{
+            color: yellow;
+            background-color: blue;
+            font-weight: bolder;
+        } */
+        /* div + p means apply on those p which is one step behind of div or we can call it one step small sibling of div */
+        div + p{
+            color: white;
+            background-color: rgb(85, 70, 70);
+            
+        }
+    </style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is another paragraph inside li</p>
+                </li>
+            </ul>
+            <p>This is a paragraph.</p>
+        </div>
+        <p>This is another paragraph.</p>
+    </div>
+    <p>This is a outer most paragraph</p>
+</body>
+</html>
