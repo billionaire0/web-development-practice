@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text shadow and box shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: blanchedalmond;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 13px burlywood; */
+            /* box-shadow: -10px -13px burlywood; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 7px 5px 10px burlywood; */
+             /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 7px 5px 10px 20px burlywood; */
+            /* box-shadow: inset 7px 5px burlywood; */
+            box-shadow: 7px 5px burlywood, 17px 11px blueviolet;
+        }
+        .card h2{
+            /* text-shadow: 2px 2px blue; */
+            text-shadow: 2px 2px 5px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam et mollitia, voluptate nobis voluptatem, harum quam odit ex eaque dignissimos voluptatibus aut iure iste porro voluptas. Consequuntur porro ut, eveniet commodi iusto assumenda at?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML course.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex eum repellat ea quis! Officiis alias necessitatibus iste totam fuga illum vero voluptatibus neque, natus expedita minus amet molestiae mollitia esse eius et sunt voluptate?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card-3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure vel labore eum, harum praesentium aliquam, enim illum similique dicta facere velit tenetur optio numquam? Voluptatem odit reprehenderit ut maxime, voluptates delectus odio deserunt in?</p>
+        </div>
+    </div>
+</body>
+</html>
