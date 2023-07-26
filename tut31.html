@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Handjet:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        .navigation {
+            font-family: 'Handjet';
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 24px;
+        }
+
+        section {
+            font-family: 'Handjet';
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid greenyellow; */
+            height: 344px;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::before{
+          content: " this is a content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item1">Home</li>
+                <li class="item2">About</li>
+                <li class="item3">Services</li>
+                <li class="item4">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to coding world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem blanditiis ipsa vel
+                similique earum dignissimos nihil eaque libero excepturi odio voluptates ad reprehenderit praesentium
+                quisquam nam a ipsam aliquid perferendis recusandae, tempora omnis!</p>
+
+        </section>
+        <!-- <hr> -->
+</body>
+
+</html>
